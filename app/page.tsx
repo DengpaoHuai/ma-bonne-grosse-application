@@ -1,113 +1,180 @@
 import Image from "next/image";
+import { Button } from "primereact/button";
+import { InputText } from "primereact/inputtext";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <>
+      <div className="grid grid-nogutter surface-0 text-800">
+        <div className="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
+          <section>
+            <span className="block text-6xl font-bold mb-1">
+              Create the screens
+            </span>
+            <div className="text-6xl text-primary font-bold mb-3">
+              your visitors deserve to see
+            </div>
+            <p className="mt-0 mb-4 text-700 line-height-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <Button
+              label="Learn More"
+              type="button"
+              className="mr-3 p-button-raised"
             />
-          </a>
+            <Button
+              label="Connexion"
+              type="button"
+              className="p-button-outlined"
+            />
+          </section>
+        </div>
+        <div className="col-12 md:col-5 overflow-hidden">
+          <img
+            src="https://i0.wp.com/breatheintravel.com/wp-content/uploads/2022/07/ut55ugecndxyj0joem3z.jpg?resize=850%2C576&ssl=1"
+            alt="hero-1"
+            className="md:ml-auto block md:h-full"
+            style={{ clipPath: "polygon(8% 0, 100% 0%, 100% 100%, 0 100%)" }}
+          />
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="surface-0">
+        <div className="text-900 font-bold text-6xl mb-4 text-center">
+          Pricing Plans
+        </div>
+        <div className="text-700 text-xl mb-6 text-center line-height-3">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+          numquam eligendi quos.
+        </div>
+
+        <div className="grid">
+          <div className="col-12 lg:col-4">
+            <div className="p-3 h-full">
+              <div
+                className="shadow-2 p-3 h-full flex flex-column"
+                style={{ borderRadius: "6px" }}
+              >
+                <div className="text-900 font-medium text-xl mb-2">Basic</div>
+                <div className="text-600">Plan description</div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <div className="flex align-items-center">
+                  <span className="font-bold text-2xl text-900">$9</span>
+                  <span className="ml-2 font-medium text-600">per month</span>
+                </div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <ul className="list-none p-0 m-0 flex-grow-1">
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Arcu vitae elementum</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Dui faucibus in ornare</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Morbi tincidunt augue</span>
+                  </li>
+                </ul>
+                <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300 mt-auto" />
+                <Button label="Buy Now" className="p-3 w-full mt-auto" />
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 lg:col-4">
+            <div className="p-3 h-full">
+              <div
+                className="shadow-2 p-3 h-full flex flex-column"
+                style={{ borderRadius: "6px" }}
+              >
+                <div className="text-900 font-medium text-xl mb-2">Premium</div>
+                <div className="text-600">Plan description</div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <div className="flex align-items-center">
+                  <span className="font-bold text-2xl text-900">$29</span>
+                  <span className="ml-2 font-medium text-600">per month</span>
+                </div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <ul className="list-none p-0 m-0 flex-grow-1">
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Arcu vitae elementum</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Dui faucibus in ornare</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Morbi tincidunt augue</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Duis ultricies lacus sed</span>
+                  </li>
+                </ul>
+                <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <Button label="Buy Now" className="p-3 w-full" />
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 lg:col-4">
+            <div className="p-3 h-full">
+              <div
+                className="shadow-2 p-3 flex flex-column"
+                style={{ borderRadius: "6px" }}
+              >
+                <div className="text-900 font-medium text-xl mb-2">
+                  Enterprise
+                </div>
+                <div className="text-600">Plan description</div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <div className="flex align-items-center">
+                  <span className="font-bold text-2xl text-900">$49</span>
+                  <span className="ml-2 font-medium text-600">per month</span>
+                </div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <ul className="list-none p-0 m-0 flex-grow-1">
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Arcu vitae elementum</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Dui faucibus in ornare</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Morbi tincidunt augue</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Duis ultricies lacus sed</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Imperdiet proin</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Nisi scelerisque</span>
+                  </li>
+                </ul>
+                <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <Button
+                  label="Buy Now"
+                  className="p-3 w-full p-button-outlined"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
